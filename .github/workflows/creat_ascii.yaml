@@ -9,14 +9,14 @@ jobs:
       - name: Install Cowsay Program
         run: sudo apt-get install cowsay -y
 
-      - name: Execute Cowsay Conmand
-        run: cowsay -f lion "Run for cover, انا الاسد اهو " > dragon.txt
+      - name: Execute Cowsay Command
+        run: cowsay -f lion "انا الاسد اهو" > lion.txt
 
       - name: Test File Exists
-        run: grep -i "dragon" dragon.txt
+        run: grep -i "الاسد" lion.txt
 
       - name: Read File
-        run: cat dragon.txt
+        run: cat lion.txt
 
       - name: List Repo Files
         run: ls -ltra
