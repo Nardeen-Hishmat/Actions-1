@@ -10,7 +10,7 @@ jobs:
         run: sudo apt-get install cowsay -y
 
       - name: Execute Cowsay Conmand
-        run: cowsay -f dragon "Run for cover, I am a DRAGON....RAWR" > dragon.txt
+        run: cowsay -f lion "Run for cover, انا الاسد اهو " > dragon.txt
 
       - name: Test File Exists
         run: grep -i "dragon" dragon.txt
